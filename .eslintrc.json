@@ -1,0 +1,52 @@
+// lint, prettier 설정 참조
+// https://feynubrick.github.io/2019/05/20/eslint-prettier.html
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended", "plugin:prettier/recommended",
+        "airbnb-base",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "project": "./tsconfig.json",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "no-useless-constructor" : "off",
+        "@typescript-eslint/no-useless-constructor": ["error"],
+        "no-unused-vars": "off",
+        "max-classes-per-file": 0,
+        "@typescript-eslint/no-unused-vars": [
+            "error"
+        ],
+        "no-empty-function":["error", {"allow":["constructors"]}],
+        "class-methods-use-this":"off"
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+              "path": ["src"],
+              "moduleDirectory": ["node_modules", "src"]
+          }
+        }
+      }
+}
