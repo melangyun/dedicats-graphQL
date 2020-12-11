@@ -27,6 +27,7 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<br> 어디갔냥은 다섯명의 고양이 애호가가 모여 만든 웹 어플리케이션입니다.
 
 ## Installation
 
@@ -72,4 +73,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+  Nest is [MIT licensed](LICENSE). 
